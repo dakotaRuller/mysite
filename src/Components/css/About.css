@@ -1,0 +1,23 @@
+.about-container {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+.about-photo {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+/*h1.name:hover {*/
+    /*font-size: 45px;*/
+    /*transition: font-size 0.8s;*/
+/*}*/

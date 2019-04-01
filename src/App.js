@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Components/css/App.css';
 //Components
-import About from './Components/About';
-import Info from './Components/Info';
-import Contact from './Components/Contact';
+import About from './Components/AboutSection/About';
+import Info from './Components/InfoSection/Info';
+import Contact from './Components/ContactSection/Contact';
 
 class App extends Component {
   render() {
