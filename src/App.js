@@ -9,9 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <About/>
+          <About className="About"/>
           <Info className="Info"/>
-          <Contact/>
+          <Contact className="Contact"/>
       </div>
     );
   }
