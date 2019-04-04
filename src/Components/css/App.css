@@ -5,6 +5,7 @@
     align-content: stretch;
     height: auto;
 }
+
 .About, .Info, .Contact {
     display: flex;
     flex-flow: column wrap;
@@ -12,13 +13,52 @@
     align-items: center;
     padding: 30px;
 }
+
 .About,.Contact {
     background-color: #f0f0f0;
     flex: 1 1 auto;
 }
+
 .Info {
     background-color: #e4e4e4;
     flex: 2 2 auto;
 }
 
+.About {
+    background-image: linear-gradient(
+            rgba(223, 206, 227, 0.19),
+            rgba(196, 179, 200, 0.05)
+    ), url(../../Resources/Img/Home-BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #2c2c2c;
+    opacity: 0.8;
+    -webkit-animation: nav-out ease-out 1s;
+}
+
+/*Gonna need this later code later*/
+/*header:hover {*/
+    /*-webkit-animation: nav-in 1s;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+
+/*@-webkit-keyframes nav-in {*/
+    /*0% { opacity: 0; }*/
+    /*100% {*/
+        /*opacity: 1;*/
+        /*z-index: 1;*/
+    /*}*/
+/*}*/
+
+/*@-webkit-keyframes nav-out {*/
+    /*from {opacity: 0.8;}*/
+    /*to {opacity: 0;}*/
+/*}*/
 

@@ -1,23 +1,33 @@
-.about-container {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #000;
+.about-header h1 {
+    font-size: 5rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #b5b5b5;
+    letter-spacing: 2px;
+    margin: 0 auto;
 }
 
-.about-photo {
-    height: 200px;
-    width: auto;
-    border-radius: 50%;
+.scroll-prompt {
+    margin-top: 15px;
 }
 
-.profile {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /*align-items: center;*/
+.profession a {
+    color:#b5b5b5;
+    text-decoration: none;
 }
 
-/*h1.name:hover {*/
-    /*font-size: 45px;*/
-    /*transition: font-size 0.8s;*/
-/*}*/
+.scroll-prompt i {
+    font-size: 20px;
+    color: #b5b5b5;
+    -webkit-animation: scroll-me 1.9s linear infinite;
+}
+
+.about-header h1:hover, .profession a:hover, .scroll-prompt i:hover{
+    opacity: 0.8;
+    transition: opacity 0.8s;
+}
+
+@-webkit-keyframes  scroll-me {
+    0% { color: #b5b5b5; }
+    50% { color: #fff; }
+    100% { color: #b5b5b5; }
+}
