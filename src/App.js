@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //Components
 import NavBar from './Components/Nav';
-import About from './Components/AboutSection/About';
+import Landing from './Components/LandingSection/Landing';
 import Info from './Components/InfoSection/Info';
 import Contact from './Components/ContactSection/Contact';
 //CSS
@@ -18,7 +18,7 @@ class App extends Component {
           <header>
               <NavBar />
           </header>
-          <About />
+          <Landing />
           <Info />
           <Contact />
       </div>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import '../css/About.css';
+import '../css/Landing.css';
 
-class About extends Component {
+class Landing extends Component {
     render() {
         return(
-            <div className="About">
-                <div className="about-header">
+            <div className="Landing">
+                <div className="landing-header">
                     <h1>Dakota</h1>
                     <h1>Ruller</h1>
                     <p className="profession">
@@ -22,4 +22,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Landing;

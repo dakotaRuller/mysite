@@ -6,7 +6,7 @@
     height: auto;
 }
 
-.About, .Info, .Contact {
+.Landing, .Info, .Contact {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -14,7 +14,7 @@
     padding: 30px;
 }
 
-.About,.Contact {
+.Landing,.Contact {
     background-color: #f0f0f0;
     flex: 1 1 auto;
 }
@@ -24,7 +24,7 @@
     flex: 2 2 auto;
 }
 
-.About {
+.Landing {
     background-image: linear-gradient(
             rgba(223, 206, 227, 0.19),
             rgba(196, 179, 200, 0.05)
