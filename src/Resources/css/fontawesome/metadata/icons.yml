@@ -6645,7 +6645,7 @@ file-code:
   label: Code File
   search:
     terms:
-      - css
+      - ComponentsCSS
       - development
       - document
       - html

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 //Components
-import NavBar from './Components/Nav';
+import NavBar from './Components/Nav/Nav';
 import Landing from './Components/LandingSection/Landing';
 import Info from './Components/InfoSection/Info';
 import Contact from './Components/ContactSection/Contact';
 //CSS
-import './Components/css/App.css';
+import './Components/ComponentsCSS/App.css';
 import './Resources/css/fontawesome/css/all.css';
 
 class App extends Component {

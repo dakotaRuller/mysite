@@ -1,0 +1,12 @@
+.info-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.professional, .personal {
+    padding: 10px;
+    background-color: #9d9d9d;
+
+}

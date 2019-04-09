@@ -15,11 +15,11 @@ ul {
 }
 
 .nav-item-icon:hover {
-    box-shadow: 0 0 8px 5px #202020;
-    transition: box-shadow 0.3s;
+    opacity: 1;
+    transition: opacity 0.8s;
 }
 
-.nav-site {
+.nav-site, .nav-social {
     display: flex;
 }
 
