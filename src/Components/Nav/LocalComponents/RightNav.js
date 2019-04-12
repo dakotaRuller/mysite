@@ -11,9 +11,7 @@ class RightNav extends Component {
         );
         return (
             <div className="nav-site">
-                {items.map((item, key) => (
-                    navItem(item, key)
-                ))}
+                {items.map((item, key) => (navItem(item, key)))}
             </div>
         );
     }

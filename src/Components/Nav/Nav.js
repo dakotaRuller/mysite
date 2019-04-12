@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import LeftNav from './LocalComponents/LeftNav';
 import RightNav from './LocalComponents/RightNav';
 //ComponentsCSS
-import '../ComponentsCSS/nav.css';
+import '../ComponentsCSS/Nav.css';
 
 
 class NavBar extends Component {
