@@ -1,7 +1,7 @@
 hr.separator {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(105, 105, 105, 1), rgba(0, 0, 0, 0.75), rgba(105, 105, 105, 1));
+    background-image: linear-gradient(to right, rgba(68, 68, 68, 0.2), rgba(86, 86, 86, 0.8), rgba(68, 68, 68, 0.2));
     width: 100%;
     opacity: 1;
 }
@@ -16,6 +16,7 @@ hr.separator {
 .professional, .personal {
     padding: 10px;
     margin: 10px;
+    /*width: 100vw;*/
 }
 /* Styling for professional section*/
 div.right-orientation, div.left-orientation {
@@ -24,70 +25,136 @@ div.right-orientation, div.left-orientation {
     grid-auto-columns: minmax(7em, auto);
 }
 /* Base box container styling*/
-div.box-1 {
+.desc-box, .img-box, .name-box {
+    border-radius: 10px;
+}
+div.desc-box {
     display:flex;
     flex-direction: row;
     padding: 40px;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
-div.box-2 {
-    background-color: #424242;
+div.desc-box div.text {
+   flex-basis: 65%;
 }
 
-div.box-3 {
+div.desc-box div.empty-space {
+    flex-basis: 35%;
+}
+
+div.img-box {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+div.img-box {
+    grid-row: 2/8;
+}
+
+div.img-box img{
+    height: auto;
+    width: 100%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+div.name-box {
     background-color: #c9c9c9;
 }
 
-div.box-3 p {
+div.name-box p {
     font-size: 75px;
     padding: 0;
     margin: 0;
 }
 
-div.box-1 div.text {
-   flex-basis: 65%;
-}
-
-div.box-1 div.empty-space {
-    flex-basis: 35%;
-}
-
-div.box-2 {
-    grid-row: 2/8;
-}
-
-div.box-2 img{
-    height: 100%;
-    width: 100%;
-    opacity: 0.92;
-}
-
 /* This placement of the container is the same for any job */
-div.box-1 {
+div.desc-box {
     grid-column: 1/13;
     grid-row: 4/10;
 }
 
-/* First Job*/
-div.right-orientation div.box-2 {
+/* Right Orientation Section */
+div.right-orientation div.img-box {
     grid-column: 9/12;
 }
 
-div.right-orientation div.box-3 {
+div.right-orientation div.name-box {
     grid-column: 2/7;
     grid-row: 9/11;
 }
 
-/* Second Job */
-div.left-orientation div.box-2 {
+/* Left Orientation Section */
+div.left-orientation div.img-box {
     grid-column: 2/5;
 }
 
-div.left-orientation div.box-3 {
+div.left-orientation div.name-box {
     grid-column: 7/12;
     grid-row: 9/11;
 }
 
+/* Personal section */
 
+.personal img {
+    height: 325px;
+    width: auto;
+}
+
+/* Carousel Section */
+
+div.carousel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 75vh;
+    width: 80%;
+    background-color: #ff253a;
+    align-self: center;
+}
+
+/* Carousel nav buttons */
+div.prev, div.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    height: 100%;
+    min-width: 10%;
+    background-color: #5a5a5a;
+    opacity: 0.7;
+    font-size: 20px;
+    transition: opacity 0.5s, font-size 0.5s;
+}
+
+div.prev i, div.next i {
+    color: white;
+    opacity: 0.7;
+    transition: opacity 1s;
+}
+
+div.prev:hover, div.next:hover {
+    opacity: 0.85;
+    font-size: 27px;
+    transition: opacity 0.5s, font-size 0.5s;
+}
+
+div.prev:active, div.next:active {
+    font-size: 29px;
+    transition: font-size 0.2s;
+}
+
+div.prev i:hover, div.next i:hover {
+    opacity: 0.85;
+    transition: opacity 1s;
+}
+
+/* Carousel content */
+
+div.carousel-content {
+    flex-basis: 80%;
+}
 

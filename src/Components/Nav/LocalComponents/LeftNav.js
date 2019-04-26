@@ -5,7 +5,7 @@ class LeftNav extends Component {
         const {items} = this.props;
         const newPageItem = (props, key) => (
             <li className="nav-item-icon" key={key}>
-                <a className="nav-item-link" href={props.url} target="_blank">{props.jsx}</a>
+                <a className="nav-item-link" href={props.url} target="_blank" rel="noopener noreferrer">{props.jsx}</a>
             </li>
         );
         const samePageItem = (props, key) => (

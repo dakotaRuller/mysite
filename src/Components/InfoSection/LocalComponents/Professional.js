@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //Images
-import avidImg from '../../../Resources/IMG/AvidxchangeLogo.jpeg';
-import impartnerImg from '../../../Resources/IMG/ImpartnerLogo.jpg';
+import avidImg from '../../../Resources/IMG/AvidxchangeLogo.png';
+import impartnerImg from '../../../Resources/IMG/ImpartnerLogo.png';
 
 class Professional extends Component {
     constructor(props) {
@@ -29,12 +29,17 @@ class Professional extends Component {
             ]
         }
     }
+
+    consoleLog(){
+        // e.persist();
+        console.log(this);
+    }
     render() {
         //Not a pure function so refactor later
         const infoOrient = ({orientation, description}) => {
             if (orientation === "right-orientation") {
                 return (
-                    <div className="box-1">
+                    <div className="desc-box">
                         <div className="text">
                             <p>{description}</p>
                         </div>
@@ -44,7 +49,7 @@ class Professional extends Component {
 
             } else {
                 return (
-                    <div className="box-1">
+                    <div className="desc-box">
                         <div className="empty-space"></div>
                         <div className="text">
                             <p>{description}</p>
@@ -54,12 +59,12 @@ class Professional extends Component {
             }
         };
         const job = (props, key) => (
-            <div className={props.orientation} key={key}>
+            <div className={props.orientation} key={key} onScroll={this.consoleLog.bind(this)}>
                 {infoOrient(props)}
-                <div className="box-2">
+                <div className="img-box">
                     <img src={props.img.src} alt={props.img.alt}/>
                 </div>
-                <div className="box-3">
+                <div className="name-box">
                     <p>{props.companyName}</p>
                 </div>
             </div>
