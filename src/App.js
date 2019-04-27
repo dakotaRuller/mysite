@@ -5,7 +5,7 @@ import Landing from './Components/LandingSection/Landing';
 import Info from './Components/InfoSection/Info';
 import Contact from './Components/ContactSection/Contact';
 //CSS
-import './Components/ComponentsCSS/App.css';
+import './Components/ComponentsCSS/App.sass';
 import './Resources/CSS/fontawesome/css/all.css';
 
 class App extends Component {

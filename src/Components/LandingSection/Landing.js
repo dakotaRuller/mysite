@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//ComponentsCSS
-import '../ComponentsCSS/Landing.css';
 
 class Landing extends Component {
     trackScroll(e) {

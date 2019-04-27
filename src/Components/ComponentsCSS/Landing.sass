@@ -1,0 +1,69 @@
+.landing-header h1.header-item
+    position: relative
+    font-size: 5em
+    font-family: 'Nothing You Could Do', serif
+    font-weight: 100
+    font-style: italic
+    color: #b5b5b5
+    letter-spacing: 2px
+    margin: 0 auto
+    border: none
+
+
+/* Line through styling I was testing out still want to play around with it */
+/*.landing-header h1::before */
+    /*content: " "*/
+    /*display: inline-block*/
+    /*border: 0.5px solid #b5b5b5*/
+    /*width: 100%*/
+    /*position: absolute*/
+    /*top: 50%*/
+    /*left: 0*/
+/**/
+
+.profession a, .profession
+    color: #b5b5b5
+    text-decoration: none
+
+
+.landing-header h1, .profession a, .profession .text, .scroll-prompt i
+    opacity: 0.5
+    transition: opacity 0.7s ease-in
+
+
+.landing-header h1:hover, .profession a:hover, .scroll-prompt i:hover
+    opacity: 0.7
+    transition: opacity 0.8s ease-out
+
+
+.scroll-prompt
+    margin-top: 15px
+
+
+.scroll-prompt
+    transform: translateY(0)
+    transition: transform 0.5s
+
+
+.scroll-prompt i
+    font-size: 20px
+    color: #b5b5b5
+    -webkit-animation: scroll-me 3.5s linear infinite
+
+
+.scroll-prompt:hover
+    transform: translateY(3px)
+    transition: transform 0.5s
+
+
+@-webkit-keyframes  scroll-me
+  0%
+    color: #9a9a9a
+  25%
+    color: #fff
+  50%
+    color: #9a9a9a
+  75%
+    color: #fff
+  100%
+    color: #9a9a9a

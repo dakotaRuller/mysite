@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 //Components
 import LeftNav from './LocalComponents/LeftNav';
 import RightNav from './LocalComponents/RightNav';
-//ComponentsCSS
-import '../ComponentsCSS/Nav.css';
 
 
 class NavBar extends Component {

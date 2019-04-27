@@ -1,74 +1,64 @@
-.App {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    height: auto;
-}
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 60 of Landing.sass
+        from line 2 of App.sass
 
-.Landing, .Info, .Contact {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
+55:     transform: translateY(3px)
+56:     transition: transform 0.5s
+57: 
+58: 
+59: @-webkit-keyframes  scroll-me
+60:   0%
+61:     color: #9a9a9a
+62:   25%
+63:     color: #fff
+64:   50%
+65:     color: #9a9a9a
 
-.Contact {
-    background-color: #f0f0f0;
-    flex: 1 1 auto;
-}
-
-.Info {
-    background-color: #d8d8d8;
-    flex: 2 2 auto;
-}
-
-.Landing {
-    background-image: linear-gradient(
-            rgba(223, 206, 227, 0.19),
-            rgba(196, 179, 200, 0.05)
-    ), url(../../Resources/IMG/Home-BG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    background-attachment: fixed;
-}
-
-h1 {
-    font-family: 'Nothing You Could Do', serif;
-    font-size: 45px;
-    font-weight: 100;
-    padding: 2px 5px;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    background-color: #2c2c2c;
-    opacity: 0.8;
-    -webkit-animation: nav-out 1s;
-}
-
-/*Gonna need this later code later*/
-/*header:hover {*/
-    /*-webkit-animation: nav-in 1s;*/
-    /*animation-fill-mode: forwards;*/
-/*}*/
-
-/*@-webkit-keyframes nav-in {*/
-    /*0% { opacity: 0; }*/
-    /*100% {*/
-        /*opacity: 1;*/
-        /*z-index: 1;*/
-    /*}*/
-/*}*/
-
-/*@-webkit-keyframes nav-out {*/
-    /*from {opacity: 0.8;}*/
-    /*to {opacity: 0;}*/
-/*}*/
-
+Backtrace:
+Landing.sass:60
+App.sass:2
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:494:in `block in tabulate'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `tabulate'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:417:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:321:in `to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:391:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 60 of Landing.sass\A         from line 2 of App.sass\A \A 55:     transform: translateY(3px)\A 56:     transition: transform 0.5s\A 57: \A 58: \A 59: @-webkit-keyframes  scroll-me\A 60:   0%\A 61:     color: #9a9a9a\A 62:   25%\A 63:     color: #fff\A 64:   50%\A 65:     color: #9a9a9a"; }

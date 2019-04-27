@@ -1,69 +1,37 @@
-.landing-header h1.header-item {
-    position: relative;
-    font-size: 5em;
-    font-family: 'Nothing You Could Do', serif;
-    font-weight: 100;
-    font-style: italic;
-    color: #b5b5b5;
-    letter-spacing: 2px;
-    margin: 0 auto;
-    border: none;
-}
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 64 of Landing.sass
 
-/* Line through styling I was testing out still want to play around with it */
-/*.landing-header h1::before {*/
-    /*content: " ";*/
-    /*display: inline-block;*/
-    /*border: 0.5px solid #b5b5b5;*/
-    /*width: 100%;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 0;*/
-/*}*/
+59:     transform: translateY(3px)
+60:     transition: transform 0.5s
+61: 
+62: 
+63: @-webkit-keyframes  scroll-me
+64:   0%
+65:     color: #9a9a9a
+66:   25%
+67:     color: #fff
+68:   50%
+69:     color: #9a9a9a
 
-.profession a, .profession {
-    color:#b5b5b5;
-    text-decoration: none;
-}
-
-.landing-header h1, .profession a, .profession .text, .scroll-prompt i{
-    opacity: 0.5;
-    transition: opacity 0.7s ease-out;
-}
-
-.landing-header h1:hover, .profession a:hover, .scroll-prompt i:hover{
-    opacity: 0.7;
-    transition: opacity 0.8s ease-in;
-}
-
-.scroll-prompt {
-    margin-top: 15px;
-}
-
-.scroll-prompt {
-    transform: translateY(0);
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -ms-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-}
-
-.scroll-prompt i {
-    font-size: 20px;
-    color: #b5b5b5;
-    -webkit-animation: scroll-me 3.5s linear infinite;
-}
-
-.scroll-prompt:hover {
-    transform: translateY(3px);
-    transition: transform 0.5s;
-}
-
-@-webkit-keyframes  scroll-me {
-    0% { color: #9a9a9a; }
-    25% { color: #fff; }
-    50% { color: #9a9a9a; }
-    75% { color: #fff; }
-    100% { color: #9a9a9a; }
-}
+Backtrace:
+Landing.sass:64
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:494:in `block in tabulate'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `tabulate'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:417:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:391:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 64 of Landing.sass\A \A 59:     transform: translateY(3px)\A 60:     transition: transform 0.5s\A 61: \A 62: \A 63: @-webkit-keyframes  scroll-me\A 64:   0%\A 65:     color: #9a9a9a\A 66:   25%\A 67:     color: #fff\A 68:   50%\A 69:     color: #9a9a9a"; }

@@ -4,8 +4,6 @@ import Professional from './LocalComponents/Professional';
 import Personal from './LocalComponents/Personal';
 import Carousel from './LocalComponents/Carousel';
 import {Waypoint} from "react-waypoint";
-//ComponentsCSS
-import '../ComponentsCSS/Info.css';
 
 class Info extends Component {
     constructor(props) {
