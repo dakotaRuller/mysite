@@ -1,0 +1,22 @@
+@import "ComponentsCSS/variables";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Nothing+You+Could+Do|Open+Sans+Condensed:300');
+
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+
+
+

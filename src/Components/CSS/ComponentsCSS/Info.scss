@@ -1,0 +1,238 @@
+//Mixins
+@mixin slideAnimation($animation) {
+  animation: $animation $carousel-timing ease-in 1;
+}
+
+@mixin scaleItem($x, $y, $timing, $opacity: 1) {
+  transform: scale($x, $y);
+  opacity: $opacity;
+  @if($opacity != 1) {
+    transition: all $timing ease-in;
+  } @else {
+    transition: transform $timing ease-in;
+  }
+
+}
+
+hr.separator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(68, 68, 68, 0.2), rgba(86, 86, 86, 0.8), rgba(68, 68, 68, 0.2));
+  width: 100%;
+  opacity: 1;
+}
+
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Styling for professional section*/
+//div.right-orientation, div.left-orientation {
+//  display: grid;
+//  grid-auto-rows: minmax(3em, auto);
+//  grid-auto-columns: minmax(7em, auto);
+//}
+
+/* Base box container styling*/
+//.desc-box, .img-box, .name-box {
+//  border-radius: 10px;
+//}
+
+//div.desc-box {
+//  display: flex;
+//  flex-direction: row;
+//  padding: 40px;
+//  background-color: rgba(0, 0, 0, 0.8);
+//  color: #fff;
+//  font-size: 20px;
+//  letter-spacing: 2px;
+//}
+
+//div.desc-box div.text {
+//  flex-basis: 65%;
+//}
+
+//div.desc-box div.empty-space {
+//  flex-basis: 35%;
+//}
+
+
+//div.img-box {
+//  background-color: rgba(0, 0, 0, 0);
+//}
+
+//div.img-box {
+//  grid-row: 2/8;
+//}
+
+//div.img-box img {
+//  height: auto;
+//  width: 100%;
+//  -webkit-border-radius: 15px;
+//  -moz-border-radius: 15px;
+//}
+
+
+//div.name-box {
+//  background-color: #c9c9c9;
+//}
+
+
+//div.name-box p {
+//  font-size: 75px;
+//  padding: 0;
+//  margin: 0;
+//}
+
+/* This placement of the container is the same for any job */
+//div.desc-box {
+//  grid-column: 1/13;
+//  grid-row: 4/10;
+//}
+
+/* Right Orientation Section */
+//div.right-orientation div.img-box {
+//  grid-column: 9/12;
+//}
+//
+//div.right-orientation div.name-box {
+//  grid-column: 2/7;
+//  grid-row: 9/11;
+//}
+
+/* Left Orientation Section */
+//div.left-orientation div.img-box {
+//  grid-column: 2/5;
+//}
+//
+//div.left-orientation div.name-box {
+//  grid-column: 7/12;
+//  grid-row: 9/11;
+//}
+
+/* Personal section */
+
+//.personal img {
+//  height: 325px;
+//  width: auto;
+//}
+
+/* Carousel Section */
+
+div.carousel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 75vh;
+  width: 80%;
+  background-color: #ff253a;
+  align-self: center;
+}
+
+/* Carousel nav buttons */
+div.prev, div.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+  min-width: 10%;
+  font-size: 20px;
+  color: #000;
+  @include scaleItem(1, 1, $button-timing, 0.1);
+}
+
+div.prev:hover, div.next:hover {
+  opacity: 0.85;
+  transition: opacity $hover-timing;
+}
+
+
+div.prev:active, div.next:active {
+  i {
+    @include scaleItem(1.2, 1.2, $button-timing, 1);
+  }
+}
+
+/* Carousel content */
+div.carousel {
+  overflow: hidden;
+}
+
+div.carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-basis: 80%;
+  opacity: 1;
+  transition: opacity 0.9s;
+}
+
+div.header-content, div.text-content {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  margin: 0 10px;
+}
+
+div.header-content {
+  flex-basis: 15%;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  @include scaleItem(1, 1, $hover-timing);
+}
+
+div.header-content:hover {
+  @include scaleItem(1.05, 1.05, $hover-timing);
+}
+
+div.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 85%;
+  opacity: 0.9;
+  @include scaleItem(1, 1, $hover-timing);
+}
+
+div.text-content:hover {
+  @include scaleItem(1.05, 1.02, $hover-timing);
+}
+
+div.header-content h2 {
+  font-size: 40px;
+}
+
+div.text-content p {
+  font-weight: bold;
+}
+
+.float-in-left {
+  @include slideAnimation(inLeft);
+}
+
+.float-in-right {
+  @include slideAnimation(inRight);
+}
+
+.float-in-top {
+  @include slideAnimation(floatDown);
+}
+
+@keyframes inLeft {
+0%{transform: translateX(-1500px);}
+100%{transform: translateX(0px);}
+}
+
+@keyframes inRight {
+0%{transform: translateX(1500px);}
+100%{transform: translateX(0px);}
+}
+
+@keyframes floatDown {
+0%{transform: translateY(-1500px);}
+100%{transform: translateY(0px);}
+}

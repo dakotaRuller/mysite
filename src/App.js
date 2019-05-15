@@ -5,8 +5,8 @@ import Landing from './Components/LandingSection/Landing';
 import Info from './Components/InfoSection/Info';
 import Contact from './Components/ContactSection/Contact';
 //CSS
-import './Components/ComponentsCSS/App.sass';
-import './Resources/CSS/fontawesome/css/all.css';
+import './Components/CSS/ComponentsCSS/App.scss';
+import './Resources/CSS/fontawesome/css/font-awesome.css';
 
 class App extends Component {
     constructor(props) {

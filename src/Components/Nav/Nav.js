@@ -11,13 +11,13 @@ class NavBar extends Component {
             navLeft: [
                 {
                     newPage: true,
-                    jsx: <i className="fab fa-linkedin nav-icon"></i>,
+                    jsx: <i className="fa fa-linkedin-square nav-icon" aria-hidden="true"></i>,
                     url: 'https://www.linkedin.com/in/dakota-ruller-b53429150'
 
                 },
                 {
                     newPage: true,
-                    jsx: <i className="fas fa-code-branch"></i>,
+                    jsx: <i className="fa fa-code nav-icon" aria-hidden="true"></i>,
                     url: 'https://github.com/dakotaRuller/mysite'
                 }
             ],
