@@ -1,7 +1,8 @@
-//Node Modules
+// Components
+import WorkPage from "@/components/work-page";
 
 export default function Work() {
  return (
-   <div>Work Page</div>
+   <WorkPage />
  );
 };

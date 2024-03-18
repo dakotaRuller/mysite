@@ -1,7 +1,9 @@
-//Node Modules
+// Components
+import AboutPage from "@/components/about-page";
+
 
 export default function About() {
  return (
-   <div>About</div>
+   <AboutPage />
  );
 };

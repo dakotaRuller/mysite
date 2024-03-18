@@ -1,7 +1,8 @@
-//Node Modules
+// Components
+import LoginPage from "@/components/login";
 
 export default function Login() {
  return (
-   <div>Login Page</div>
+   <LoginPage />
  );
 };

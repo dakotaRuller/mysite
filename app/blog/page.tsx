@@ -1,7 +1,8 @@
-//Node Modules
+// Components
+import BlogPage from "@/components/blog";
 
 export default function Blog() {
  return (
-   <div>Blog Page</div>
+   <BlogPage />
  );
 };

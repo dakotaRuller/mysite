@@ -1,7 +1,8 @@
-//Node Modules
+// Components
+import ContactPage from "@/components/contact-page";
 
 export default function Contact() {
  return (
-   <div>Contact</div>
+   <ContactPage />
  );
 };

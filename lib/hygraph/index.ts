@@ -24,14 +24,29 @@ const buildQuery: any = async (query: any)  => {
   return content;
 };
 
-const aboutPageContent = () => buildQuery(gql`${aboutPageQuery}`);
-const contactPageContent = () => buildQuery(gql`${contactPageQuery}`);
-const homePageContent = () => buildQuery(gql`${homePageQuery}`);
-const workPageContent = () => buildQuery(gql`${workPageQuery}`);
+const getPageContent: any = (pathName: string) => {
+  console.log("pathName: ", pathName);
+  let query;
+  switch(pathName) {
+    case "/about":
+      query = aboutPageQuery;
+      break;
+    case "/blog":
+      // Replace this with blog query when the model is created in hygraph
+      query = homePageQuery;
+      break;
+    case "/contact":
+      query = contactPageQuery;
+      break;
+    case "/work":
+      query = workPageQuery;
+      break;
+    default:
+      query = homePageQuery;
+  };
 
+  return buildQuery(gql`${query}`);
+};
 export {
-  aboutPageContent,
-  contactPageContent,
-  homePageContent,
-  workPageContent
+  getPageContent
 };

@@ -8,10 +8,13 @@ html {
 
 body {
   align-items: center;
-  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
+}
+
+.bebas-neue {
+  font-family: var(--font-bebas-neue);
 }
 
 @layer utilities {

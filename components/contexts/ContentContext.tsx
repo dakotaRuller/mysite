@@ -1,3 +1,5 @@
+"use client";
+
 //Node Modules
 import React, {createContext, useContext, useReducer} from "react";
 
@@ -52,12 +54,12 @@ const ContentProvider = ({ content = initialContentState, children }: ContentPro
 
 
 function useContentContext(): ContentType {
- let context = useContext(ContentContext);
- if (context === undefined) {
-  context = {...initialContentState};
+  let context = useContext(ContentContext);
+  if (context === undefined) {
+   context = {...initialContentState};
+  }
+  return context;
  }
- return context;
-}
 
 export { ContentProvider, useContentContext };
 
