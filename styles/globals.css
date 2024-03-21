@@ -1,9 +1,18 @@
+/* Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Local imports */
+@import "./components/navbar.css";
+
+:root {
+  --global-transition: 400ms;
+}
+
 html {
   font-family: var(--font-poppins);
+  box-sizing: border-box;
 }
 
 body {

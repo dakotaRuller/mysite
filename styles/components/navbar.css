@@ -1,0 +1,93 @@
+/* Nav Wrapper */
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Nav Toggle */
+.nav-toggle {
+    position: relative;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45px;
+    padding: 8px;
+    width: 55px;
+    z-index: 20;
+}
+
+.bar-1, .bar-2, .bar-3 {
+    border-radius: 5px;
+    height: 4px;
+    width: 80%;
+}
+
+.bar-3  {
+    width: 50%;
+}
+
+.nav-toggle.active {
+    align-items: center;
+    position: relative;
+}
+
+
+.nav-toggle.active > .bar-1, .nav-toggle.active > .bar-3 {
+    position: absolute;
+    width: 30%;
+    left: 18%;
+    transition: all var(--global-transition);
+}
+
+.nav-toggle.active > .bar-1 {
+    top: 37%;
+    left: 18%;
+    transform: rotate(-45deg);
+}
+
+.nav-toggle.active > .bar-2 {
+    position: relative;
+    top: 45%;
+    transition: all var(--global-transition);
+}
+
+.nav-toggle.active > .bar-3 {
+    top: 57%;
+    left: 18%;
+    transform: rotate(45deg);
+}
+
+/* Nav Content */
+.navbar-content {
+    background-color: white;
+    height: 100vh;
+    left: -101vw;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    transition: all var(--global-transition);
+    width: 80vw;
+    z-index: 2;
+}
+
+.navbar-content.active {
+    left: 0;
+    opacity: 1;
+}
+
+.nav-item-icon {
+    opacity: 0;
+}
+
+.nav-item-icon.icon-active {
+    opacity: 1;
+    transition: all 800ms;
+    
+}

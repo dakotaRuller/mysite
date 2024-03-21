@@ -18,8 +18,9 @@ const config: Config = {
       'white': '#FAFAFA',
       "dark-grey": "#505050",
       "black": "#171717",
-      "pastel-red": "#BC4A42",
-      "pastel-green": "#5B705E",
+      "pale-yellow": "#E9EB78",
+      "shaded-yellow": "#ABAD58",
+      "pastel-yellow": "#D6D94E"
     }
   },
   plugins: [],

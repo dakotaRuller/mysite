@@ -25,7 +25,6 @@ const buildQuery: any = async (query: any)  => {
 };
 
 const getPageContent: any = (pathName: string) => {
-  console.log("pathName: ", pathName);
   let query;
   switch(pathName) {
     case "/about":

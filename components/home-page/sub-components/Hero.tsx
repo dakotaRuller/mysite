@@ -10,8 +10,6 @@ const Hero: React.FC<Props> = () => {
 
     const content = useContentContext();
 
-    console.log("content:", content);
-
     return (
         <section className="homepage-hero">
             Hero
