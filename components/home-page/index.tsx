@@ -7,8 +7,7 @@ type Props = {};
 const HomePage: React.FC<Props> = () => {
 
     return (
-        <div className="homepage-container">
-            <h1 className="text-3xl bebas-neue">HomePage Container</h1>
+        <div className="homepage-container flex items-center justify-evenly w-full">
             <Hero />
         </div>
     )

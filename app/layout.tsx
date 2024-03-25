@@ -60,15 +60,14 @@ export default async function RootLayout({
       <head>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </head>
-      <body className="p-1 bg-pale-yellow text-black">
+      <body className="p-1 bg-white text-black">
         <main>
         <ContentProvider content={pageContent}>
           <>
             <Nav/>
-            {children}
-            <span className="material-symbols-outlined">
-              settings_accessibility
-            </span>
+            <div className="page-content">
+              {children}
+            </div>
             <Footer />
           </>
           </ContentProvider>

@@ -32,32 +32,32 @@
     width: 50%;
 }
 
-.nav-toggle.active {
+.nav-toggle.mobile-active {
     align-items: center;
     position: relative;
 }
 
 
-.nav-toggle.active > .bar-1, .nav-toggle.active > .bar-3 {
+.nav-toggle.mobile-active > .bar-1, .nav-toggle.mobile-active > .bar-3 {
     position: absolute;
     width: 30%;
     left: 18%;
     transition: all var(--global-transition);
 }
 
-.nav-toggle.active > .bar-1 {
+.nav-toggle.mobile-active > .bar-1 {
     top: 37%;
     left: 18%;
     transform: rotate(-45deg);
 }
 
-.nav-toggle.active > .bar-2 {
+.nav-toggle.mobile-active > .bar-2 {
     position: relative;
     top: 45%;
     transition: all var(--global-transition);
 }
 
-.nav-toggle.active > .bar-3 {
+.nav-toggle.mobile-active > .bar-3 {
     top: 57%;
     left: 18%;
     transform: rotate(45deg);
@@ -65,8 +65,10 @@
 
 /* Nav Content */
 .navbar-content {
-    background-color: white;
-    height: 100vh;
+    background: var(--white);
+    background: linear-gradient(288deg, var(--pastel-yellow) -28%, var(--white) 35%);
+    border-radius: 0 0 20px 0;
+    height: calc(100vh - 25px);
     left: -101vw;
     opacity: 0;
     padding: 20px;
@@ -77,9 +79,20 @@
     z-index: 2;
 }
 
-.navbar-content.active {
+.navbar-content.mobile-active {
     left: 0;
     opacity: 1;
+}
+
+.active-page-link {
+    font-weight: 600;
+}
+
+.active-page-link-underline {
+    border-radius: 15px ;
+    display: block;
+    height: 4px;
+    width: 4px;
 }
 
 .nav-item-icon {
@@ -90,4 +103,40 @@
     opacity: 1;
     transition: all 800ms;
     
+}
+
+/* Desktop Breakpoint */
+@media only screen and (min-width: 768px) {
+    :root {
+        /* 
+        This desktop nav max width variable is also defined in a media query in the global.css file.
+        If this value is adjusted here make sure to do the same in that file
+        */
+        --desktop-nav-max-width: 145px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .navbar-content {
+        background: transparent;
+        border-radius: 0;
+        height: 100vh;
+        left: 0;
+        max-width: var(--desktop-nav-max-width);
+        opacity: 1;
+        width: 18vw;
+    }
+
+    .desktop-content-seperator {
+        background-color: var(--dark-grey);
+        border-radius: 5px;
+        display: block;
+        height: 80vh;
+        left: var(--desktop-nav-max-width);
+        position: relative;
+        width: 3px;
+        top: 10vh;
+    }
 }

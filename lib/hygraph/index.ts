@@ -1,8 +1,8 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
 // Node Modules
-import { GraphQLClient as hygraphClient, gql } from 'graphql-request';
+import { GraphQLClient as hygraphClient, gql } from "graphql-request";
 
 // Queries
 import {
@@ -10,7 +10,7 @@ import {
   contactPageQuery,
   homePageQuery,
   workPageQuery
-} from './queries';
+} from "./queries";
 
 const hygraphCMS = new hygraphClient(process.env.HYGRAPH_ENDPOINT, {
   headers: {

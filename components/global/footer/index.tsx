@@ -24,7 +24,7 @@ const Footer: React.FC<Props> = () => {
     const content = useContentContext();
 
     return (
-        <footer className="flex p-1 w:100">
+        <footer className="footer-wrapper">
             <FontAwesomeIcon className="fa-brand-icon" icon={["fab", "linkedin"]}/>
         </footer>
     )

@@ -13,20 +13,17 @@ import NavItem from "./sub-components/NavItem";
 // Types
 type Props = {};
 
-
-// ADD ONCLICK FN TO REMOVE THE NAVBAR WHEN NAV ITEM IS CLICKED
-
-
 const Nav: React.FC<Props> = () => {
-  const [isNavActive, setIsNavActive] = useState<boolean>(false);
+  const [isMobileNavActive, setIsMobileNavActive] = useState<boolean>(false);
   const toggleMobileNavbar = (): void => {
     // Disable scrolling while mobile nav is active
     if(window.innerWidth <= 769) {
-    const scrollBehavior = !isNavActive ? 'hidden' : 'scroll';
-    document.querySelector("body").style.overflow = scrollBehavior;
+    const scrollBehavior = !isMobileNavActive ? "hidden" : "scroll";
+    const body = document.querySelector("body") as HTMLElement;
+    body.style.overflow = scrollBehavior;
   }
 
-  setIsNavActive(!isNavActive)
+  setIsMobileNavActive(!isMobileNavActive)
  };
 
   const {navbar: navbarContent} = Object.values(useContentContext().content)[0].sharedContent;
@@ -34,13 +31,14 @@ const Nav: React.FC<Props> = () => {
  return (
    <nav className="navbar-wrapper">
     <button
-        className={`nav-toggle ${isNavActive && 'active'}`}
-        onClick={() => toggleMobileNavbar()}>
+        className={`nav-toggle ${isMobileNavActive && "mobile-active"}`}
+        onClick={() => toggleMobileNavbar()}
+        tabIndex={0}>
         <div className="bar-1 bg-dark-grey"/>
         <div className="bar-2 bg-dark-grey"/>
         <div className="bar-3 bg-dark-grey"/>
     </button>
-    <div className={`navbar-content ${isNavActive && 'active'} flex flex-col justify-center`}>
+    <div className={`navbar-content ${isMobileNavActive && "mobile-active"} flex flex-col justify-center`}>
       {navbarContent.navItems.map(
         navItem => 
           (
@@ -52,6 +50,7 @@ const Nav: React.FC<Props> = () => {
           )
         )}
     </div>
+    <span className="desktop-content-seperator"></span>
    </nav>
  );
 };

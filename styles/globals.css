@@ -5,9 +5,16 @@
 
 /* Local imports */
 @import "./components/navbar.css";
+@import "./components/footer.css";
 
 :root {
   --global-transition: 400ms;
+  --white: #FAFAFA;
+  --dark-grey: #505050;
+  --black: #171717;
+  --pale-yellow: #E9EB78;
+  --shaded-yellow: #ABAD58;
+  --pastel-yellow: #D6D94E;
 }
 
 html {
@@ -24,6 +31,35 @@ body {
 
 .bebas-neue {
   font-family: var(--font-bebas-neue);
+}
+
+.section-styles {
+  border-radius: 20px;
+  height: 75vh;
+  padding: 15px;
+  width: 90%;
+}
+
+.page-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100vw;
+} 
+
+/* Desktop Breakpoint */
+@media only screen and (min-width: 768px) {
+  :root {
+    --desktop-nav-max-width: 145px;
+  }
+  .page-content {
+    left: var(--desktop-nav-max-width);
+    position: absolute;
+    width: calc(100vw - var(--desktop-nav-max-width));
+  } 
 }
 
 @layer utilities {
