@@ -67,15 +67,14 @@
 .navbar-content {
     background: var(--white);
     background: linear-gradient(288deg, var(--pastel-yellow) -28%, var(--white) 35%);
-    border-radius: 0 0 20px 0;
-    height: calc(100vh - 25px);
+    height: 100vh;
     left: -101vw;
     opacity: 0;
     padding: 20px;
     position: absolute;
     top: 0;
     transition: all var(--global-transition);
-    width: 80vw;
+    width: 100vw;
     z-index: 2;
 }
 
@@ -122,7 +121,6 @@
     .navbar-content {
         background: transparent;
         border-radius: 0;
-        height: 100vh;
         left: 0;
         max-width: var(--desktop-nav-max-width);
         opacity: 1;

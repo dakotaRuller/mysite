@@ -12,7 +12,5 @@ export type HomePageTypes = {
 
 // type for structured data on the front end
 export type HomePageContentType = {
- content: {
   homePage: HomePageTypes
- }
 };

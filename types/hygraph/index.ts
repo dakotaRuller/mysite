@@ -4,6 +4,8 @@ import { HomePageTypes } from "./homePageTypes";
 
 export type ContentType = {
   content: {
-    [key: string]: AboutPageTypes | ContactPageTypes | HomePageTypes,
+    homePage: HomePageTypes,
+    aboutPage: AboutPageTypes,
+    contactPage: ContactPageTypes
   }
 };

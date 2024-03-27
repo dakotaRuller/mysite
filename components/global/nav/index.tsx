@@ -38,7 +38,7 @@ const Nav: React.FC<Props> = () => {
         <div className="bar-2 bg-dark-grey"/>
         <div className="bar-3 bg-dark-grey"/>
     </button>
-    <div className={`navbar-content ${isMobileNavActive && "mobile-active"} flex flex-col justify-center`}>
+    <div className={`navbar-content ${isMobileNavActive && "mobile-active"} flex flex-col justify-center items-center`}>
       {navbarContent.navItems.map(
         navItem => 
           (

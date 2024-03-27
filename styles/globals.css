@@ -6,6 +6,7 @@
 /* Local imports */
 @import "./components/navbar.css";
 @import "./components/footer.css";
+@import "./components/home.css";
 
 :root {
   --global-transition: 400ms;
@@ -29,15 +30,31 @@ body {
   justify-content: center;
 }
 
-.bebas-neue {
+.font-bebas-neue {
   font-family: var(--font-bebas-neue);
 }
 
 .section-styles {
   border-radius: 20px;
-  height: 75vh;
+  height: 85vh;
   padding: 15px;
   width: 90%;
+}
+
+.section-height-restriction-sm {
+  max-height: 400px;
+}
+
+.section-height-restriction-md {
+  max-height: 450px;
+}
+
+.section-height-restriction-lg {
+  max-height: 500px;
+}
+
+.section-height-restriction-xl {
+  max-height: 580px;
 }
 
 .page-content {
