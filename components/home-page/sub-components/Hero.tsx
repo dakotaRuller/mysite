@@ -27,7 +27,7 @@ const Hero: React.FC<Props> = () => {
         }
     } = useContentContext();
     return (
-        <section className="homepage-hero section-styles flex flex-col-reverse items-center justify-between lg:flex-row">
+        <section className="homepage-hero-container section-styles flex flex-col-reverse items-center justify-between lg:flex-row">
             <div className="hero-image">
                 <Image
                     alt="test image"

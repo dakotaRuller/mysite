@@ -20,5 +20,6 @@
     .footer-wrapper {
         flex-direction: column;
         margin-left: var(--desktop-nav-max-width);
+        width: 86vw;
     }
 }

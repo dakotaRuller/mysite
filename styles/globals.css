@@ -24,10 +24,16 @@ html {
 }
 
 body {
+  color: var(--white);
+  min-height: 100vh;
+}
+
+main {
   align-items: center;
-  color: white;
   display: flex;
+  min-height: 100vh;
   justify-content: center;
+  position: relative;
 }
 
 .font-bebas-neue {
@@ -37,6 +43,7 @@ body {
 .section-styles {
   border-radius: 20px;
   height: 85vh;
+  margin-bottom: 20px;
   padding: 15px;
   width: 90%;
 }
@@ -57,11 +64,12 @@ body {
   max-height: 580px;
 }
 
-.page-content {
+.page-content-container {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  margin-bottom: 50px;
+  min-height: 100vh;
   justify-content: space-between;
   padding: 15px;
   width: 100vw;
@@ -72,9 +80,8 @@ body {
   :root {
     --desktop-nav-max-width: 145px;
   }
-  .page-content {
-    left: var(--desktop-nav-max-width);
-    position: absolute;
+  .page-content-container {
+    margin-left: var(--desktop-nav-max-width);
     width: calc(100vw - var(--desktop-nav-max-width));
   } 
 }

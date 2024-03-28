@@ -62,14 +62,14 @@ export default async function RootLayout({
       </head>
       <body className="p-1 bg-white text-black">
         <main>
-        <ContentProvider content={pageContent}>
-          <>
-            <Nav/>
-            <div className="page-content">
-              {children}
-            </div>
-            <Footer />
-          </>
+          <ContentProvider content={pageContent}>
+            <>
+              <Nav/>
+              <div className="page-content-container">
+                {children}
+              </div>
+              <Footer />
+            </>
           </ContentProvider>
         </main>
       </body>
