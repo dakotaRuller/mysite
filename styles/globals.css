@@ -16,10 +16,13 @@
   --pale-yellow: #E9EB78;
   --shaded-yellow: #ABAD58;
   --pastel-yellow: #D6D94E;
+
+  /* Animation variables for news ticker */
+  --animationDistance: -100px;
+  --animationDuration: 1s;
 }
 
 html {
-  font-family: var(--font-poppins);
   box-sizing: border-box;
 }
 
@@ -34,6 +37,10 @@ main {
   min-height: 100vh;
   justify-content: center;
   position: relative;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
 }
 
 .font-bebas-neue {

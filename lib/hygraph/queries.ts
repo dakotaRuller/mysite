@@ -3,16 +3,16 @@ import { entryIds } from "@/constants/hygraph";
 const sharedQuery = `
     sharedContent {
         footer {
-        header
+          header
         }
         navbar {
-        mobileHeading
-        navItems {
-        displayText
-        link
-        isExternalLink
-        }
-        }
+          mobileHeading
+          navItems {
+              displayText
+              link
+              isExternalLink
+            }
+          }
         }
     }
 `;
@@ -40,8 +40,9 @@ const sharedQuery = `
        headerLine2
        subHeader
        subHeaderHoverText { 
-        raw 
+        raw
        }
+       aboutTickerText
        ${sharedQuery}
    }
    `;

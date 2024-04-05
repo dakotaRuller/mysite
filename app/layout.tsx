@@ -56,11 +56,11 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang="en" className={`${bebasNeue.variable} ${poppins.variable} text-base`}>
+    <html lang="en" className={`${poppins.variable} ${bebasNeue.variable} text-base`}>
       <head>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </head>
-      <body className="p-1 bg-white text-black">
+      <body className="font-poppins p-1 bg-white text-black">
         <main>
           <ContentProvider content={pageContent}>
             <>

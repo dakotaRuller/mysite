@@ -20,7 +20,7 @@ const contentReducer = (state: any, action: any) => {
  }
 };
 
-const initialContentState: ContentType = {
+const initialContentState: any = {
  content: {}
 };
 
