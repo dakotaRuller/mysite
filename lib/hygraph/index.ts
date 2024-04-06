@@ -27,21 +27,21 @@ const buildQuery: any = async (query: any)  => {
 const getPageContent: any = (pathName: string) => {
   let query;
   switch(pathName) {
-    case "/about":
-      query = aboutPageQuery;
-      break;
-    case "/blog":
-      // Replace this with blog query when the model is created in hygraph
-      query = homePageQuery;
-      break;
-    case "/contact":
-      query = contactPageQuery;
-      break;
-    case "/work":
-      query = workPageQuery;
-      break;
-    default:
-      query = homePageQuery;
+  case "/about":
+    query = aboutPageQuery;
+    break;
+  case "/blog":
+    // Replace this with blog query when the model is created in hygraph
+    query = homePageQuery;
+    break;
+  case "/contact":
+    query = contactPageQuery;
+    break;
+  case "/work":
+    query = workPageQuery;
+    break;
+  default:
+    query = homePageQuery;
   };
 
   return buildQuery(gql`${query}`);

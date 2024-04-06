@@ -1,0 +1,10 @@
+{
+    "extends": "next",
+    "rules": {
+        "indent": [1, 2],
+        "semi": [1, "always"],
+        "quotes": ["error", "double"],
+        "object-curly-spacing": ["error", "always"],
+        "no-debugger": 1
+    }
+  }

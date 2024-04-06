@@ -17,7 +17,7 @@ const sharedQuery = `
     }
 `;
    
-   export const aboutPageQuery = `
+export const aboutPageQuery = `
    query AboutPage {
      aboutPage(where: {id: "${entryIds.aboutPage}"}) {
        header
@@ -25,7 +25,7 @@ const sharedQuery = `
    }
    `;
    
-   export const contactPageQuery = `
+export const contactPageQuery = `
    query ContactPage {
      contactPage(where: {id: "${entryIds.contactPage}"}) {
        header
@@ -33,7 +33,7 @@ const sharedQuery = `
    }
    `;
    
-   export const homePageQuery = `
+export const homePageQuery = `
    query Homepage {
      homePage(where: {id: "${entryIds.homePage}"}) {
        headerLine1
@@ -47,7 +47,7 @@ const sharedQuery = `
    }
    `;
    
-   export const workPageQuery = `
+export const workPageQuery = `
    query WorkPage {
      workPage(where: {id: "${entryIds.workPage}"}) {
        header
@@ -55,9 +55,9 @@ const sharedQuery = `
    }
    `;
    
-   export default {
-    aboutPageQuery,
-    contactPageQuery,
-    homePageQuery,
-    workPageQuery
-   };
+export default {
+  aboutPageQuery,
+  contactPageQuery,
+  homePageQuery,
+  workPageQuery
+};

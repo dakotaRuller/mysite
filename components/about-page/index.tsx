@@ -2,11 +2,11 @@
 type Props = {};
 
 const AboutPage: React.FC<Props> = () => {
-    return (
-        <div className="about-container">
+  return (
+    <div className="about-container">
             About Container
-        </div>
-    )
+    </div>
+  );
 };
 
 export default AboutPage;

@@ -52,13 +52,13 @@ export default async function RootLayout({
     pageContent = await getPageContent(pathName);
   } catch (error) {
     console.log("ERROR RETRIEVING CONTENT: ", error);
-    pageContent = {content: "Oops there was a problem please try again later"};
+    pageContent = { content: "Oops there was a problem please try again later" };
   }
 
   return (
     <html lang="en" className={`${poppins.variable} ${bebasNeue.variable} text-base`}>
       <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=optional" />
       </head>
       <body className="font-poppins p-1 bg-white text-black">
         <main>

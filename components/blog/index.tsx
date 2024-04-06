@@ -3,11 +3,11 @@ type Props = {};
 
 const BlogPage: React.FC<Props> = () => {
 
-    return (
-        <div className="blog-container">
+  return (
+    <div className="blog-container">
             Blog Container
-        </div>
-    )
+    </div>
+  );
 };
 
 export default BlogPage;

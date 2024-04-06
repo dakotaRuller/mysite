@@ -10,19 +10,19 @@ import AboutMeTicker from "./AboutMeTicker";
 type Props = {};
 
 const AboutMe: React.FC<Props> = () => {
-    const {
-        content: {
-            homePage: {
-                aboutTickerText
-            }
-        }
-    } = useContentContext();
+  const {
+    content: {
+      homePage: {
+        aboutTickerText
+      }
+    }
+  } = useContentContext();
 
-    return (
-        <section className="about-me-container section-styles bg-pastel-yellow relative">
-            <AboutMeTicker tickerItemsArray={aboutTickerText}/>
-        </section>
-    )
+  return (
+    <section className="about-me-container section-styles bg-pastel-yellow relative">
+      <AboutMeTicker tickerItemsArray={aboutTickerText}/>
+    </section>
+  );
 };
 
 export default AboutMe;

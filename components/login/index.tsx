@@ -3,11 +3,11 @@ type Props = {};
 
 const LoginPage: React.FC<Props> = () => {
 
-    return (
-        <div className="login-container">
+  return (
+    <div className="login-container">
             Login Container
-        </div>
-    )
+    </div>
+  );
 };
 
 export default LoginPage;

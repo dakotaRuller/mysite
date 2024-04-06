@@ -3,11 +3,11 @@ type Props = {};
 
 const WorkPage: React.FC<Props> = () => {
 
-    return (
-        <div className="work-container">
+  return (
+    <div className="work-container">
             Work Container
-        </div>
-    )
+    </div>
+  );
 };
 
 export default WorkPage;

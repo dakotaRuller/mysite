@@ -21,13 +21,13 @@ type Props = {};
 library.add(fab);
 
 const Footer: React.FC<Props> = () => {
-    const content = useContentContext();
+  const content = useContentContext();
 
-    return (
-        <footer className="footer-wrapper">
-            <FontAwesomeIcon className="fa-brand-icon" icon={["fab", "linkedin"]}/>
-        </footer>
-    )
+  return (
+    <footer className="footer-wrapper">
+      <FontAwesomeIcon className="fa-brand-icon" icon={["fab", "linkedin"]}/>
+    </footer>
+  );
 };
 
 export default Footer;

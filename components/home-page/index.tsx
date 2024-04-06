@@ -7,12 +7,12 @@ type Props = {};
 
 const HomePage: React.FC<Props> = () => {
 
-    return (
-        <div className="homepage-container flex flex-col items-center justify-evenly w-full">
-            <Hero />
-            <AboutMe />
-        </div>
-    )
+  return (
+    <div className="homepage-container flex flex-col items-center justify-evenly w-full">
+      <Hero />
+      <AboutMe />
+    </div>
+  );
 };
 
 export default HomePage;

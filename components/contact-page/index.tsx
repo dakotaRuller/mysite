@@ -3,11 +3,11 @@ type Props = {};
 
 const ContactPage: React.FC<Props> = () => {
 
-    return (
-        <div className="contact-container">
+  return (
+    <div className="contact-container">
             Contact Container
-        </div>
-    )
+    </div>
+  );
 };
 
 export default ContactPage;
