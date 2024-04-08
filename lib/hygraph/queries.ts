@@ -43,6 +43,12 @@ export const homePageQuery = `
         raw
        }
        aboutTickerText
+       aboutMeHeaderText
+       aboutMeLink {
+        displayText
+        link
+        isExternalLink
+       }
        ${sharedQuery}
    }
    `;

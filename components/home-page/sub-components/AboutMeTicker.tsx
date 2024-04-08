@@ -45,7 +45,7 @@ const AboutMeTicker: React.FC<Props> = ({ tickerItemsArray }) => {
   };
 
   return (
-    <div className="news-ticker relative top-1/2 flex overflow-hidden">
+    <div className="news-ticker relative flex overflow-hidden">
       <span className="ticker-start-gradient"></span>
       <div className="news-ticker-inner" ref={handleRefUpdate} onAnimationEnd={handleAnimationEnd}>
         {items.map((obj: TickerItem, index: number) => (

@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 // Types
-import { NavItem } from "@/types/hygraph/sharedContentTypes";
+import { ButtonOrLink } from "@/types/hygraph/sharedContentTypes";
 type Props = {
- navItemDetails: NavItem,
+ navItemDetails: ButtonOrLink,
  onClick: () => void;
 };
 

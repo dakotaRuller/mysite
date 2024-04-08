@@ -1,27 +1,29 @@
-.hero-header, .hero-sub-header {
-    opacity: 0;
-}
-
 .animate-header-1 {
+    opacity: 0;
     animation: 900ms cubic-bezier(0.73, 0.9, 0.19, 1.29) 800ms forwards heroHeaderAnimation;
 }
 
 .animate-header-2 {
+    opacity: 0;
     animation: 900ms cubic-bezier(0.73, 0.9, 0.19, 1.29) 1600ms forwards heroHeaderAnimation;
 }
 
 .animate-sub-header {
+    opacity: 0;
     animation: 900ms ease-in 3800ms forwards heromMiscAnimation;
 }
 
-.hero-image {
+.animate-hero-image {
+    opacity: 0;
     animation: 900ms ease-in 2800ms forwards heromMiscAnimation;
+}
+
+.hero-image {
     background: var(--white);
     border-radius: 15px;
     margin-top: 15px;
     max-height: 65%;
     height: 100%;
-    opacity: 0;
     position: relative;
     width: 98%;
 }
@@ -40,7 +42,7 @@
     height: 100%;
     position: absolute;
     width: 25px;
-    z-index: 100;
+    z-index: 1;
 }
 
 .ticker-end-gradient {
@@ -54,10 +56,11 @@
 }
 
 .news-ticker {
-    width: 100%;
-    position: relative;
-    white-space: nowrap;
     overflow: hidden;
+    position: relative;
+    top: 80%;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .news-ticker:before {
@@ -88,6 +91,10 @@
     .hero-image {
         max-height: 100%;
         max-width: 55%;
+    }
+
+    .news-ticker {
+        top: 50%;
     }
 }
 

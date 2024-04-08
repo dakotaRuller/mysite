@@ -1,17 +1,19 @@
-export type NavItem = {
-    displayText: string,
-    link: string,
-    isExternalLink: boolean
-   }
+
    
-   type Navbar = {
-    mobileHeading: string,
-    navItems: Array<NavItem>
-   }
+type Navbar = {
+  mobileHeading: string,
+  navItems: Array<ButtonOrLink>
+}
+
+export type ButtonOrLink = {
+  displayText: string,
+  link: string,
+  isExternalLink: boolean
+}
    
-   export type SharedContent = {
-    navbar: Navbar,
-    footer: {
-     header: string
-    }
-   };
+export type SharedContent = {
+  navbar: Navbar,
+  footer: {
+    header: string
+  }
+};

@@ -14,6 +14,7 @@ import "@/styles/globals.css";
 
 // Contexts
 import { ContentProvider } from "@/components/contexts/ContentContext";
+import { AppStateProvider, initialAppState } from "@/components/contexts/AppContext";
 
 // Lib
 import { getPageContent } from "@/lib/hygraph";
@@ -62,15 +63,17 @@ export default async function RootLayout({
       </head>
       <body className="font-poppins p-1 bg-white text-black">
         <main>
-          <ContentProvider content={pageContent}>
-            <>
-              <Nav/>
-              <div className="page-content-container">
-                {children}
-              </div>
-              <Footer />
-            </>
-          </ContentProvider>
+          <AppStateProvider state={initialAppState}>
+            <ContentProvider content={pageContent}>
+              <>
+                <Nav/>
+                <div className="page-content-container">
+                  {children}
+                </div>
+                <Footer />
+              </>
+            </ContentProvider>
+          </AppStateProvider>
         </main>
       </body>
     </html>
