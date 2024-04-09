@@ -13,6 +13,7 @@
   --white: #FAFAFA;
   --dark-grey: #505050;
   --black: #171717;
+  --pale-orange: #ff9d4b;
   --pale-yellow: #E9EB78;
   --shaded-yellow: #ABAD58;
   --pastel-yellow: #D6D94E;
@@ -50,7 +51,9 @@ main {
 .section-styles {
   border-radius: 20px;
   height: 85vh;
+  max-height: 525px;
   margin-bottom: 20px;
+  min-height: 525px;
   padding: 15px;
   width: 90%;
 }

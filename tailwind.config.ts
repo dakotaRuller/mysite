@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      "xs": "380px",
       "sm": "640px",
       "md": "768px",
       "lg": "1024px",
@@ -18,6 +19,7 @@ const config: Config = {
       "white": "#FAFAFA",
       "dark-grey": "#505050",
       "black": "#171717",
+      "pale-orange": "#ff9d4b",
       "pale-yellow": "#E9EB78",
       "shaded-yellow": "#ABAD58",
       "pastel-yellow": "#D6D94E"

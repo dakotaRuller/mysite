@@ -35,21 +35,23 @@ const Hero: React.FC<Props> = () => {
     }, 4500);
   }, []);
   return (
-    <section className="homepage-hero-container section-styles flex flex-col-reverse items-center justify-between lg:flex-row">
-      <div className={`hero-image ${initialLandingLoad ? "" : "animate-hero-image"}`}>
-        <Image
-          alt="test image"
-          src={testImg}
-          fill={true}
-          objectFit="cover"
-        />
-      </div>
-      <div className="flex flex-col items-end justify-evenly pr-8 self-end">
-        <h1 className={`hero-header font-bebas-neue ${initialLandingLoad ? "" : "animate-header-1"} text-4xl text-nowrap`}>{headerLine1}</h1>
-        <h1 className={`hero-header font-bebas-neue ${initialLandingLoad ? "" : "animate-header-2"} text-4xl text-nowrap`}>{headerLine2}</h1>
-        <p className={`hero-sub-header ${initialLandingLoad ? "" : "animate-sub-header"} text-l text-nowrap`}>{subHeader}</p>
-      </div>
-    </section>
+    <div className="homepage-hero-container">
+      <section className="section-styles flex flex-col-reverse items-center justify-between lg:flex-row">
+        <div className={`hero-image${initialLandingLoad ? "" : " animate-hero-image"}`}>
+          <Image
+            alt="test image"
+            src={testImg}
+            fill={true}
+            objectFit="cover"
+          />
+        </div>
+        <div className="flex flex-col items-end justify-evenly self-end lg:pr-8">
+          <h1 className={`hero-header font-bebas-neue${initialLandingLoad ? "" : " animate-header-1"} text-5xl text-end text-pretty xs:text-nowrap `}>{headerLine1}</h1>
+          <h1 className={`hero-header font-bebas-neue${initialLandingLoad ? "" : " animate-header-2"} text-5xl text-end text-pretty xs:text-nowrap`}>{headerLine2}</h1>
+          <p className={`hero-sub-header${initialLandingLoad ? "" : " animate-sub-header"} text-l text-nowrap`}>{subHeader}</p>
+        </div>
+      </section>
+    </div>
   );
 };
 
